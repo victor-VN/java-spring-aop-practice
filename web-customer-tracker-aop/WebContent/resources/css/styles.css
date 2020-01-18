@@ -1,0 +1,109 @@
+body {
+	background-color: #7ea5e5;
+}
+
+button:focus {outline:0;}
+
+.title-today{
+	
+}
+
+.card-task{
+	background-color: white;
+	padding: 2%;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	border-radius: 15px;
+	overflow-wrap:break-word;
+	height: 500px;
+	overflow-y: auto;
+	overflow-x: hidden;
+
+
+	position: relative;
+}
+
+.show-trash:hover  .trash{
+	display: inline; 
+	
+}
+
+
+.trash{
+	cursor: pointer;
+	display: none;
+}
+
+.btn-add-task{
+ 
+  position: fixed;
+  z-index: 99;
+  bottom: 165px;  
+  color: black;
+  -webkit-transition: font-size 0.4s; /* For Safari 3.1 to 6.0 */
+  transition: font-size 0.4s;
+  font-size: 1.3em;
+  
+}
+
+.btn-add-task:hover{
+
+	color: #253a5b;
+	cursor: pointer;
+	font-size: 1.8em;
+}
+
+
+.btn-navigation{
+	background-color:  #7384a0;
+	color: white;
+	 border-radius: 50%;
+    width: 50px;
+    height: 50px;
+	border-style: none;
+}
+
+.btn-navigation:hover{
+	cursor: pointer;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	border-radius: 50%;
+    width: 55px;
+    height: 55px;
+	border-style: none;
+	
+
+}
+
+.center-screen {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  
+}
+
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+ 
+::-webkit-scrollbar-button:start:decrement,
+::-webkit-scrollbar-button:end:increment  {
+  display: none;
+}
+ 
+::-webkit-scrollbar-track-piece  {
+  background-color: #3b3b3b;
+  -webkit-border-radius: 6px;
+}
+ 
+::-webkit-scrollbar-thumb:vertical {
+  background-color: #666;
+  -webkit-border-radius: 6px;
+}
+
+.modal-style{
+	margin-top: 180px;
+}
+
